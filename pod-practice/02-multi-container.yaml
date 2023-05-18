@@ -6,5 +6,5 @@ spec:
 containers:
 - image: nginx
   name: nginx
-- image: almalinux
+- image: almalinux 8
   name: almalinux
