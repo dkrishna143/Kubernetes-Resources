@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-    name: nginx
+    purpose: nginx
 spec:
   containers:
   - name: nginx
@@ -28,9 +28,9 @@ kind: Pod
 metadata:
   name: debug
   labels:
-    purpose: nginx
+    purpose: debug
 spec:
   containers:
   - name: almalinux
     image: almalinux
-     cmd:["sleep","200"]
+    command: ["sleep","20000"]
